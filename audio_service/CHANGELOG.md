@@ -19,6 +19,9 @@
 
 * Support custom media controls (@defsub)
 * Support fast forward, rewind and stop when targeting Android 13 (@defsub)
+## 0.18.11
+
+* Add deep link support for FlutterFragmentActivity (@jan-milovanovic)
 
 ## 0.18.10
 
