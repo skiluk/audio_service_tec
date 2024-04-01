@@ -1,4 +1,4 @@
-// ignore_for_file: public_member_api_docs
+// ignore_for_file: public_member_api_docs, avoid_print
 
 // This example demonstrates:
 //
@@ -50,6 +50,8 @@ Future<void> main() async {
       androidNotificationOngoing: true,
     ),
   );
+  // Log async errors from the platform.
+  AudioService.asyncError.listen((e) => print('Async error: $e'));
   runApp(const MyApp());
 }
 
@@ -178,6 +180,7 @@ class MainScreen extends StatelessWidget {
                 final processingState =
                     snapshot.data ?? AudioProcessingState.idle;
                 return Text(
+                    // ignore: deprecated_member_use
                     "Processing state: ${describeEnum(processingState)}");
               },
             ),
@@ -330,7 +333,6 @@ class AudioPlayerHandler extends BaseAudioHandler
             .toList(),
       ));
     } catch (e) {
-      // ignore: avoid_print
       print("Error: $e");
     }
   }
