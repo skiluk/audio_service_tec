@@ -1,6 +1,7 @@
 ## 0.18.14
 
 * Added androidStopForegroundOnCompleted to AudioServiceConfig which will stop foreground service when AudioProcessingState == AudioProcessingState.completed (@skiluk)
+* Support rxdart 0.28.x.
 
 ## 0.18.13
 
