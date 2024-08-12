@@ -5,7 +5,6 @@
 
 ## 0.18.14
 
-* Added androidStopForegroundOnCompleted to AudioServiceConfig which will stop foreground service when AudioProcessingState == AudioProcessingState.completed (@skiluk)
 * Support rxdart 0.28.x.
 
 ## 0.18.13
@@ -24,9 +23,6 @@
 
 * Support custom media controls (@defsub)
 * Support fast forward, rewind and stop when targeting Android 13 (@defsub)
-## 0.18.11
-
-* Add deep link support for FlutterFragmentActivity (@jan-milovanovic)
 
 ## 0.18.10
 
